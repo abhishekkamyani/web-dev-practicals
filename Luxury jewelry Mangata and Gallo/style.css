@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFD700;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* for heading parts */
+header{
+    margin: 60px 0px 20px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header img{
+    width: 50%;
+    transition:1s ease;
+}
+
+/* for nav menus */
+nav{
+    margin-top: 40px;
+    background-color: #c4a4a4b9;
+    opacity: 0.5;
+}
+
+nav ul{
+    text-align: center;
+    list-style: none;
+    padding: 1.5em 0;
+}
+
+ul li{
+    display: inline-block;
+    padding: 0 4em;
+    transition:1s ease;
+}
+
+li a{
+    text-decoration: none;
+    color: #000000b9;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* for main content */
+main.container{
+    width: 100%;
+}
+
+.container section{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    row-gap: 50px;
+}
+
+section article{
+    flex: 1 1 30%;
+}
+
+/* for promotion banner inside section of main content */
+article.bannerarticle{
+    border-top: 4px solid black;
+    background-color: black;
+    position: relative;
+}
+
+.bannerarticle img{
+    width: 100%;
+}
+
+.bannerarticle span{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+span h1{
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: oblique;
+    text-align: center;
+    padding-top: 10px;
+    letter-spacing: 15px;
+}
+
+span p{
+    color: #ffffff;
+    padding: 10px;
+    font-size: 1rem;
+    word-spacing: 0.5em;
+    letter-spacing: 0.2em;
+    line-height: 1.5em;
+}
+
+/* another section(.info) inside main content */
+.info{
+    margin: 40px 50px;
+}
+
+.info .infoarticle{
+    /* min-height: 80vh; */
+    background-color: #CDD193;
+    margin: 0px 15px;
+    border-radius: 10px;
+    transition: 1s ease-in-out;
+}
+
+.infoarticle a{
+    text-decoration: none;
+    color: black;
+}
+
+.infoarticle h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: oblique;
+    letter-spacing: 0.2em;
+    margin: 20px 8px;
+    text-shadow: 1px 1px 10px #ffffff;
+}
+
+.infoarticle img, .infoarticle iframe{
+    width: 97%;
+    padding: 0.5em;
+    height: 13em;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.infoarticle p{
+    padding: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    opacity: 0.85;
+}
+
+/* for foot content */
+footer{
+    min-height: 30vh;
+    background-color: #c4a4a4b9;
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+}
+
+footer div, footer .rights{
+    flex: 1;
+    display: flex;
+}
+
+.footlogo img{
+    width: 50%;
+    margin: auto;
+}
+
+.rights a{
+    margin: auto;
+    text-decoration: none;
+    color: #000000b9;
+    padding: 10px;
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+    font-weight: bolder;
+}
+
+
+/* for effects */
+
+header img:hover{
+    transform: scale(1.3);
+}
+
+li:hover{
+    transform: scale(1.1);    
+}
+
+li:hover a{
+    color: black;
+    font-weight: bolder;
+    text-decoration-line: underline;
+    text-underline-offset: 6px;
+    text-decoration-color: white;
+    text-decoration-thickness: 2px;
+}
+
+article.infoarticle:hover{
+    transform: scale(1.075);
+    z-index: 1;
+}
+
+
+/* media queries viewports */
+@media (max-width: 1060px) {
+    span p, .infoarticle p{
+        padding: 8px;
+        font-size: 0.8rem;
+        word-spacing: 0.4em;
+        letter-spacing: 0.1em;
+        line-height: 1.3em;
+    }
+    span h1{
+        font-size: 1.2rem;
+        padding-top: 8px;
+        letter-spacing: 10px;
+    }
+    .infoarticle h1{
+        font-size: 1.2rem;
+        letter-spacing: 0.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    span p, .infoarticle p{
+        padding: 5px;
+        font-size: 0.6rem;
+        word-spacing: 0.2em;
+        letter-spacing: 0.06em;
+        line-height: 1.2em;
+    }
+    span h1{
+        font-size: 1rem;
+        padding-top: 6px;
+        letter-spacing: 5px;
+    }
+    .infoarticle h1{
+        font-size: 1rem;
+        letter-spacing: 0.1em;
+    }
+}
+@media (max-width: 500px) {
+    span p{
+        padding: 3px;
+        font-size: 0.3rem;
+        word-spacing: 0.1em;
+        letter-spacing: 0.02em;
+        line-height: 1.2em;
+    }
+    span h1{
+        font-size: 0.5rem;
+        padding-top: 3px;
+        letter-spacing: 2px;
+    }
+    section article{
+        flex: 1 1 50%;
+    }
+}
