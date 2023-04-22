@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family:  "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    color: white;
+    background-color: black;
+    font-size: 16px;
+}
+
+/* for header/background image */
+header{
+    background: linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0.05)) , url(images/background_img.jpg);
+    height: 100vh;
+}
+
+header nav{
+    height: 90px;
+}
+
+/* for netflix logo */
+nav a.logo{
+    display: inline-block;
+    line-height: 90px;
+    margin-left: 3%;
+}
+nav img{
+    width: 167px;
+    height: 45px;
+    vertical-align: middle;
+}
+/* for sign in link */
+nav a.signin{
+    color: #fff;
+    background-color: #e50914;
+    text-decoration: none;
+    float: right;
+    margin-top: 18px;
+    margin-right: 3%;
+    padding: 7px 17px;
+    line-height: normal;
+    font-weight: 400;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+/* for section - pitch */
+.pitch{
+    margin: 0 3%;
+    position: absolute;
+    top: 35%;
+    font-size: 1.8vw;
+}
+.pitch_title{
+    font-size: 3em;  /*3 times bigger to the .pitch font-size */
+    margin-bottom: 0.2em; /*0.2 times to the new font-size*/
+    font-weight: 700;
+}
+.pitch_subtitle{
+    margin-bottom: 0.5em;
+}
+.btn{
+    font-size: 14px;
+    letter-spacing: 1.9px;
+    font-weight: 400;
+    margin: .5em .5em .5em 0; /*accordingly its font size:14px*/
+    padding: 12px 2em;
+    color: #fff;
+    background-color: #e50914;
+    cursor: pointer;
+    font-family: Arial,sans-serif;
+    border-radius: 2px;
+    border: 0;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    transition: 0.25s ease-in-out;
+}
+.btn:hover, .signin:hover{
+    background-color: #f40612;
+}
+
+/* for navigation menu - #features */
+#features > nav{
+    padding-top: 35px;
+    background-color: #141414;
+    border-bottom: 2px solid #3d3d3d;
+}
+
+#features > nav a{
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: #777;
+    height: 125px;
+    line-height: 20px;
+    vertical-align: top;
+}
+#features > nav a:hover{
+    color: white;
+}
+
+#features > nav a img{
+    height: 49px;
+    width: 60px;
+}
+
+#features > nav a h2{
+    margin-top: 10px;
+    font-size: 90%;
+}
+
+/* for div inside nav */
+.columns{
+    display: flex;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+.size-80{
+    width: 80%;
+}
+.column{
+display: block;
+    flex:1 1 0;
+}
